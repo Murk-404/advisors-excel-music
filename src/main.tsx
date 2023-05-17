@@ -13,6 +13,7 @@ import {
   QueryClientProvider,
 } from 'react-query'
 import { ErrorBoundary } from 'react-error-boundary'
+// import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 
 if (import.meta.env.VITE_ENABLE_MSW === 'true') {
   // const { worker } = require('./mocks/browser')
@@ -23,6 +24,8 @@ if (import.meta.env.VITE_ENABLE_MSW === 'true') {
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
+      retry: false,
+      useErrorBoundary: true,
       staleTime: Infinity,
       cacheTime: Infinity,
       refetchOnWindowFocus: false, 
@@ -34,6 +37,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <ErrorBoundary fallback={<p>oops!</p>}>
       <QueryClientProvider client={queryClient}>
+        {/* <ReactQueryDevtools /> */}
         <App />
       </QueryClientProvider>
     </ErrorBoundary>

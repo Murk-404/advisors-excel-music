@@ -15,6 +15,7 @@
     "@emotion/styled": "^11.11.0",
     "@fontsource/roboto": "^4.5.8",
     "@mui/material": "^5.13.0",
+    "@tanstack/react-query-devtools": "^4.29.7",
     "blueimp-load-image": "^5.16.0",
     "browser-image-compression": "^2.0.2",
     "color.js": "^1.2.0",
@@ -22,6 +23,7 @@
     "dotenv": "^16.0.3",
     "jsonapi-serializer": "^3.6.7",
     "ky": "^0.33.3",
+    "node-fetch": "^3.3.1",
     "node-vibrant": "^3.2.1-alpha.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -30,6 +32,7 @@
     "react-query": "^3.39.3"
   },
   "devDependencies": {
+    "@playwright/test": "^1.33.0",
     "@types/jsonapi-serializer": "^3.6.5",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
