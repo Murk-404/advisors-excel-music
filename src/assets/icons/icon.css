@@ -1,0 +1,8 @@
+.icon {
+  width: 60px;
+  height: 60px;
+  transition: fill 0.2s ease-in-out, filter 0.2s;
+}
+.icon:hover {
+  fill: rgba(40, 183, 134, 0.8);
+}

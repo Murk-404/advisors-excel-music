@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -5,7 +9,18 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: rgba(200, 200, 200, 1);
+
+  --black: 18, 22, 28;
+  --darkest: 18, 25, 31;
+  --dark: 25, 35, 45;
+  --med-dark: 21, 29, 37;
+  --medium: 30, 40, 50;
+  /* --light: 97, 115, 130; */
+  --light: 82, 100, 114;
+  --grey: 175, 175, 175;
+  --lightest: 200, 200, 200;
+  --green: 32, 146, 107;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,7 +28,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
+/* 
 a {
   font-weight: 500;
   color: #646cff;
@@ -66,4 +81,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
